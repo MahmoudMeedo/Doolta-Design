@@ -1,0 +1,213 @@
+@import "../main-rulez.scss";
+body{
+  background-image: url(../../images/form.jpg);
+  @extend %cover;
+  min-height: 100vh;
+}
+.intro{
+  background-color: $mainColor;
+  color: $color;
+  padding: 10px 5px;
+  line-height: 30px;
+}
+/* Start Form */
+.form{
+  .col-md{
+    padding: 0;
+    margin-right: 20px;
+  }
+  .main{
+    margin-top: 20px;
+    background-color: $color;
+    @include borderRadius(5px);
+    h3{
+      background-color: $sColor;
+      color: $color;
+      font-family: monospace;
+      padding: 20px;
+      span{
+        padding: 15px 20px;
+      }
+    }
+    .form-check-input{
+      margin-left: 0;
+      background-color: transparent;
+      border: 1px solid $sColor;
+      @include borderRadius(0);
+    }
+    form{
+      padding: 15px 20px;
+      .details{
+        span{
+          color: $mainColor;
+        }
+        strong{
+          cursor: $pointer;
+          color: #000;
+        }
+      }
+      p{
+        color: #777;
+        font-size: 14px;
+        font-family: serif;
+      }
+      .form-group{
+        position: relative;
+        i{
+          position: absolute;
+          top: 10px;
+          left: 0;
+          z-index: 555;
+          @include transition(.5s, ease-in-out);
+        }
+        input{
+          text-indent: 16px;
+          position: relative;
+          border: none;
+          border-bottom: 2px solid $sColor;
+          @include borderRadius(0);
+          @include transition(.5s, ease-in-out);
+          &::placeholder{
+            font-family: serif;
+            color: $fontColor;
+            @include transition(.5s, ease-in-out);
+          }
+          &:focus::placeholder{
+            opacity: 0;
+            font-size: 10px;
+          }
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        &:hover{
+          i{
+            color: $sColor;
+          }
+        }
+      }
+      .btn-primary,.btn-primary:active,.btn-primary:hover,.btn-primary:visited{
+        width: 100%;
+        background-color: $sColor;
+        border-color: $sColor;
+        @include transition(.5s, ease-in-out);
+      }
+      .btn-primary:hover{
+        background-color: $color;
+        color: $sColor;
+      }
+        a{
+          color: $sColor;
+          &:hover{
+            text-decoration: none;
+            color: $mainColor;
+          }
+        }
+      }
+    }
+}
+.social-icons{
+  .row{
+    width: 100%;
+    justify-content: center;
+  }
+  li{
+    margin: 10px 40px;
+    a{
+      width: 60px;
+      height: 60px;
+      position: relative;
+      display: block;
+      background: #FFF;
+      text-align: center;
+      transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+      transition: .5s;
+      box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+      &:before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+        background: #b1b1b1;
+        transition: .5s;
+        transform: rotate(0) skewY(-45deg);
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        background: #b1b1b1;
+        transition: .5s;
+        transform: rotate(0) skewX(-45deg);
+      }
+      .fa{
+        font-size: 30px;
+        color: #000;
+        line-height: 60px;
+        transition: .5s;
+      }
+      &:hover{
+        transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(15px,-15px);
+        box-shadow: -40px 40px 40px rgba(0,0,0,.5);
+        i{
+          color: $color;
+        }
+      }
+    }
+    &:nth-child(1):hover a{
+      background-color: #3b5999;
+      &:before{
+        background-color: #2e4a86;
+      }
+      &:after{
+        background-color: #4a69ad;
+      }
+    }
+    &:nth-child(2):hover a{
+      background-color: #55acee;
+      &:before{
+        background-color: #4184b7;
+      }
+      &:after{
+        background-color: #4d9fde;
+      }
+    }
+    &:nth-child(3):hover a{
+      background-color: #0077B5;
+      &:before{
+        background-color: #126a98;
+      }
+      &:after{
+        background-color: #1a8cc7;
+      }
+    }
+    &:nth-child(4):hover a{
+      background-color: #e4405f;
+      &:before{
+        background-color: #a23549;
+      }
+      &:after{
+        background-color: #e65872;
+      }
+    }
+    &:nth-child(5):hover a{
+      background-color: #cd201f;
+      &:before{
+        background-color: #942121;
+      }
+      &:after{
+        background-color: #de3938;
+      }
+    }
+  }
+}
+@media (max-width: 767px){
+  .form .main{
+    margin-right: 0;
+  }
+}

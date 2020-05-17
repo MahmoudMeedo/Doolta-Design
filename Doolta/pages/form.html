@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/libs/font-awesome.css" />
+    <link rel="stylesheet" href="../css/pagesStyle/form.css" />
+</head>
+<body>
+
+  <div class="text-center intro">
+    <span><i class="fa fa-heart-o fa-lg"></i> Welcome To Our Modern And Modest Company</span>
+  </div>
+
+  <!-- Start Navbar -->
+
+  <nav class="text-center position-fixed" id="sidebar">
+    <div class="logo m-auto">
+      <img src="../images/header/logo.svg" />
+    </div>
+    <ul class="list-unstyled">
+      <li><a href="../index.html"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="../index.html"><i class="fa fa-pencil"></i> About</a></li>
+      <li><a href="../index.html"><i class="fa fa-thumbs-up"></i> Services</a></li>
+      <li><a href="../index.html" data-name="testim"><i class="fa fa-bell-o"></i> Testimonials</a></li>
+      <li><a href="../index.html"><i class="fa fa-certificate"></i> Skills</a></li>
+      <li><a href="../index.html"><i class="fa fa-credit-card-alt"></i> Prices</a></li>
+      <li><a href="../index.html"><i class="fa fa-users"></i> Team</a></li>
+      <li><a href="#"><i class="fa fa-handshake-o"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <div class="position-fixed" id="toggle-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- End Navbar -->
+
+  <!-- Start Form -->
+  <section class="form">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md main sign">
+          <h3 class="text-center text-uppercase"><span>sign up</span></h3>
+          <form>
+              <div class="details">
+                <p>Welcome To <span>DOOLTA</span>. Please Fill In The Fields With Your Details, Or <br /><strong>Log In</strong> In case You Have An Account</p>
+              </div>
+              <div class="form-group">
+                <i class="fa fa-user fa-lg fa-fw"></i>
+                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <i class="fa fa-envelope fa-lg fa-fw"></i>
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <i class="fa fa-lock fa-lg fa-fw"></i>
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Accept The Terms</label>
+              </div>
+              <button type="submit" class="d-block btn btn-primary"><i class="fa fa-paper-plane fa-lg fa-fw"></i> Sign Up</button>
+          </form>
+        </div>
+
+        <div class="col-md main log">
+          <h3 class="text-center text-uppercase"><span>log in</span></h3>
+          <form>
+              <div class="details">
+                <p>Welcome To <span>DOOLTA</span>. Please Fill In The Fields With Your Details, Or <br /><strong>Sign Up</strong> In case You Don't Have An Account</p>
+              </div>
+              <div class="form-group">
+                <i class="fa fa-user fa-lg fa-fw"></i>
+                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Username or Email">
+              </div>
+
+              <div class="form-group">
+                <i class="fa fa-lock fa-lg fa-fw"></i>
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <button type="submit" class="d-block btn btn-primary"><i class="fa fa-paper-plane fa-lg fa-fw"></i> Log In</button>
+              <a class="lead" href="#">Forgot Email Or Password?</a>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Form -->
+  <div class="container">
+    <ul class="social-icons text-center d-flex list-unstyled">
+      <div class="row">
+        <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
+      </div>
+    </ul>
+  </div>
+
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      "use strict";
+      $("#toggle-btn").on("click", function(){
+        $(this).toggleClass("active");
+        $("#sidebar").toggleClass("active");
+      });
+    });
+  </script>
+</body>
+</html>

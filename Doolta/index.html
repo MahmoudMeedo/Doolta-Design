@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/libs/font-awesome.css" />
+    <link rel="stylesheet" href="css/libs/animate.css" />
+    <link rel="stylesheet" href="css/libs/loading.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loading Overlay -->
+	<div class="overpage">
+		<div class="ring">
+			LOADING
+			<span></span>
+		</div>
+	</div>
+
+  <!-- Start Header -->
+  <header class="position-relative">
+    <div class="overlay-header position-relative">
+      <!-- Start Upper Bar -->
+      <div class="upper-bar">
+        <div class="container">
+            <div class="text-center intro wow flash">
+              <span><i class="fa fa-heart-o fa-lg"></i> Welcome To Our Modern And Modest Company</span>
+            </div>
+            <!-- Start Social Icons -->
+            <ul class="social-icons text-center position-fixed list-unstyled">
+              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+            </ul>
+            <div class="position-fixed d-none scrollTopButton">
+              <i class="fa fa-chevron-up fa-2x fa-fw"></i>
+            </div>
+        </div>
+      </div>
+      <!-- End Upper Bar -->
+      <!-- Start Navbar -->
+
+      <nav class="text-center position-fixed" id="sidebar">
+        <div class="logo m-auto">
+          <img src="images/header/logo.svg" />
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#About" data-name="about-us"><i class="fa fa-pencil"></i> About</a></li>
+          <li><a href="#Services" data-name="services"><i class="fa fa-thumbs-up"></i> Services</a></li>
+          <li><a href="#Testimonials" data-name="testim"><i class="fa fa-bell-o"></i> Testimonials</a></li>
+          <li><a href="#Skills" data-name="skills"><i class="fa fa-certificate"></i> Skills</a></li>
+          <li><a href="#Prices" data-name="price-tables"><i class="fa fa-credit-card-alt"></i> Prices</a></li>
+          <li><a href="#Team" data-name="team"><i class="fa fa-users"></i> Team</a></li>
+          <li><a href="pages/form.html"><i class="fa fa-handshake-o"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="position-fixed" id="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End Navbar -->
+      <!-- Start Header Content -->
+      <div class="content">
+        <div class="container">
+          <div class="row">
+
+              <div class="speech col-md-7">
+                <h2 class="text-uppercase">we offer several packages and services</h2>
+                <h4 id="typing-it"></h4>
+                <a href="form.html" class="btn">Sign Up</a>
+                <a href="form.html" class="btn">Log In</a>
+              </div>
+
+              <div class="wow bounceIn subscribe m-auto col-sm-8 col-md-4">
+                <h4 class="text-center">Subscribe Now</h4>
+                  <form>
+                   <div class="form-group">
+                     <input type="email" class="form-control" placeholder="enter your name">
+                   </div>
+                   <div class="form-group">
+                    <input type="text" class="form-control" placeholder="enter your email">
+                  </div>
+                  <button type="submit" class="text-uppercase btn-block btn btn-primary">subscribe now <i class="fa fa-chevron-right"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End Header Content -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start About Us Section -->
+  <section class="about-us wow lightSpeedIn" data-wow-offset="500">
+    <div class="container">
+      <h2 class="h1 text-center text-uppercase"><span>About Us</span></h2>
+      <div class="row">
+
+        <div class="intro col-sm-6">
+          <h2 class="text-uppercase">Our Aim</h2>
+          <p>
+            "In these times of digital gold rush, your data is the most precious asset.
+            Wheter it is personal, operational or commercial, your data always get bigger,
+            more complex and more sensitive and requires
+            innovative tools to exploit its full potential.
+            Doolta's vocation is to provide the best tools to do so.
+            Tools that bring simple and powerful solution to your
+            challenges and difficulties, to leverage
+            your efficiency and make you save time and money."
+          </p>
+        </div>
+
+        <div class="col-sm-6 accordion">
+        	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        		<div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="headingOne">
+        				<h4 class="panel-title">
+        					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        						<i class="fa fa-plus"></i>
+        						Collapsible Group Item #1
+        					</a>
+        				</h4>
+        			</div>
+        			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        				<div class="panel-body">
+                  In these times of digital gold rush, your data is the most precious asset.
+                  Wheter it is personal</div>
+        			</div>
+        		</div>
+        		<div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="headingTwo">
+        				<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        						<i class="fa fa-plus"></i>
+        						Collapsible Group Item #2
+        					</a>
+        				</h4>
+        			</div>
+        			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        				<div class="panel-body">
+                  In these times of digital gold rush, your data is the most precious asset.
+                  Wheter it is personal</div>
+        			</div>
+        		</div>
+        		<div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="headingThree">
+        				<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        						<i class="fa fa-plus"></i>
+        						Collapsible Group Item #3
+        					</a>
+        				</h4>
+        			</div>
+        			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        				<div class="panel-body">
+                  In these times of digital gold rush, your data is the most precious asset.
+                  Wheter it is personal</div>
+        			</div>
+        		</div>
+            <div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="headingFour">
+        				<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        						<i class="fa fa-plus"></i>
+        						Collapsible Group Item #4
+        					</a>
+        				</h4>
+        			</div>
+        			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        				<div class="panel-body">
+                  In these times of digital gold rush, your data is the most precious asset.
+                  Wheter it is personal</div>
+        			</div>
+        		</div>
+        	</div><!-- panel-group -->
+        </div><!-- container -->
+        </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+  <!-- Start Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2 class="h1 text-center text-uppercase"><span>Awesome Services</span></h2>
+      <!-- Article -->
+      <div class="text-center row">
+        <article class=" col-sm-6 service-item service-item-dark wow bounceInLeft" data-wow-offset="400">
+            <div class="text-center front-text">
+              <i class="fa fa-heart fa-3x"></i>
+              <h4>Unlimited Features</h4>
+            </div>
+            <div class="back-text">
+              <h4>Unlimited Features</h4>
+              <p>In these times of digital gold rush, your data is the most precious asset.
+              Wheter it is personal</p>
+              <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+            </div>
+        </article>
+        <article class=" col-sm-6 service-item service-item-light wow bounceInRight" data-wow-offset="400">
+            <div class="text-center front-text">
+              <i class="fa fa-folder fa-3x"></i>
+              <h4>Data monitoring</h4>
+            </div>
+            <div class="back-text">
+              <h4>Data monitoring</h4>
+              <p>In these times of digital gold rush, your data is the most precious asset.
+              Wheter it is personal</p>
+              <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+        </article>
+        <article class=" col-sm-6 service-item service-item-dark wow bounceInLeft" data-wow-offset="300">
+            <div class="text-center front-text">
+              <i class="fa fa-bar-chart fa-3x"></i>
+              <h4>Free Data Analysis</h4>
+            </div>
+            <div class="back-text">
+              <h4>Free Data Analysis</h4>
+              <p>In these times of digital gold rush, your data is the most precious asset.
+              Wheter it is personal</p>
+              <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+        </article>
+        <article class=" col-sm-6 service-item service-item-light wow bounceInRight" data-wow-offset="300">
+            <div class="text-center front-text">
+              <i class="fa fa-sliders fa-3x"></i>
+              <h4>Technical Support</h4>
+            </div>
+            <div class="back-text">
+              <h4>Technical Support</h4>
+              <p>In these times of digital gold rush, your data is the most precious asset.
+              Wheter it is personal</p>
+              <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+            </div>
+        </article>
+      </div>
+    </div>
+    <!-- Start Achievments Section -->
+    <div class="text-center achievments">
+      <div class="container">
+        <div class="row">
+          <div class="achieved col-sm-6 col-md wow rollIn" data-wow-offset="300">
+            <i class="fa-users fa fa-4x fa-fw"></i>
+            <h4>Happy Customers</h4>
+            <h3>1,271</h3>
+          </div>
+          <div class="achieved col-sm-6 col-md wow rollIn" data-wow-offset="300">
+            <i class="fa-trophy fa fa-4x fa-fw"></i>
+            <h4>Completed Projects</h4>
+            <h3>397</h3>
+          </div>
+          <div class="achieved col-sm-6 col-md wow rollIn" data-wow-offset="300">
+            <i class="fa-clock-o fa fa-4x fa-fw"></i>
+            <h4>Hours Worked</h4>
+            <h3>14</h3>
+          </div>
+          <div class="achieved col-sm-6 col-md wow rollIn" data-wow-offset="300">
+            <i class="fa-user fa fa-4x fa-fw"></i>
+            <h4>Awards Winned</h4>
+            <h3>235</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Achievments Section -->
+  </section>
+  <!-- End Services Section -->
+  <!-- Start Our Skills -->
+  <section class="skills">
+    <div class="container">
+
+      <h2 class="h1 text-center text-uppercase"><span>Our Skills</span></h2>
+
+      <div class="row">
+
+        <div class="what col-md-6 wow bounce" data-wow-offset="200">
+          <h4>What We Do?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-check fa-lg"></i> SEO & Keyword Research</li>
+            <li><i class="fa fa-check fa-lg"></i> Business Analytics</li>
+            <li><i class="fa fa-check fa-lg"></i> Application Development</li>
+            <li><i class="fa fa-check fa-lg"></i> Customer Support</li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-check fa-lg"></i> Data Storage</li>
+            <li><i class="fa fa-check fa-lg"></i> Internet Marketing</li>
+            <li><i class="fa fa-check fa-lg"></i> CLean Code</li>
+            <li><i class="fa fa-check fa-lg"></i> Easily Customizable</li>
+          </ul>
+        </div>
+
+        <div class="m-auto col-xs-12 col-md-6 wow flip" data-wow-offset="200">
+          <div class="bar">
+            <div class="skill">Business Analytics</div>
+            <div class="bar-outer">
+              <div class="speech-bubble business">93%</div>
+              <div class="bar-inner bs"></div>
+            </div>
+          </div>
+
+          <div class="bar">
+            <div class="skill">Application Development</div>
+            <div class="bar-outer">
+              <div class="speech-bubble application">97%</div>
+              <div class="bar-inner ap"></div>
+            </div>
+          </div>
+
+          <div class="bar">
+            <div class="skill">Customer Support</div>
+            <div class="bar-outer">
+              <div class="speech-bubble support">90%</div>
+              <div class="bar-inner sp"></div>
+            </div>
+          </div>
+
+        <div class="bar">
+          <div class="skill">SEO & Keyword Research</div>
+          <div class="bar-outer">
+            <div class="speech-bubble seo">88%</div>
+            <div class="bar-inner so"></div>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="skill">Data Storage</div>
+          <div class="bar-outer">
+            <div class="speech-bubble storage">94%</div>
+            <div class="bar-inner sg"></div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+  <!-- End Our Skills -->
+  <!-- Start Testimonials -->
+  <section data-name="testim" class="text-center position-relative testim">
+    <div class="d-flex position-absolute t-overlay">
+      <div class="container">
+        <h2><span>Testimonials</span></h2>
+        <div class="slider wow bounceIn" data-wow-offset="200">
+
+          <div class="t-active">
+            <img src="images/testim/01.jpg" alt="Client #1">
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </q>
+              <h3>Someone Name</h3>
+          </div>
+
+          <div>
+            <img src="images/testim/02.jpg" alt="Client #2">
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </q>
+              <h3>Someone Name</h3>
+          </div>
+
+          <div>
+            <img src="images/testim/03.jpg" alt="Client #3">
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </q>
+              <h3>Someone Name</h3>
+          </div>
+
+          <div>
+            <img src="images/testim/04.jpg" alt="Client #4">
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </q>
+              <h3>Someone Name</h3>
+          </div>
+
+          <div>
+            <img src="images/testim/05.jpg" alt="Client #5">
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </q>
+              <h3>Someone Name</h3>
+          </div>
+
+          <div>
+            <img src="images/testim/06.jpg" alt="Client #6">
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </q>
+              <h3>Someone Name</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonials -->
+  <!-- Start Prices Table -->
+    <section class="text-center price-tables wow fadeOut" data-wow-offset="50">
+      <div class="container">
+          <h2 class="h1 text-center text-uppercase"><span>Prices Table</span></h2>
+        <div class="row">
+
+          <div class="price-tb basic col-md">
+            <div class="title">
+                <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+                <h2 class="text-uppercase">Basic</h2>
+            </div>
+            <div class="price">
+              <h4>$ <span>25</span></h4>
+            </div>
+            <div class="option">
+              <ul class="list-unstyled">
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 10Gb Space</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 3 Domain Name</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 20 Email Address</li>
+                <li><i class="fa fa-times fa-lg" aria-hidden="true"></i> Live Support</li>
+              </ul>
+            </div>
+            <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+          </div>
+
+          <div class="price-tb standard col-md">
+            <div class="title">
+                <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+                <h2 class="text-uppercase">Standard</h2>
+            </div>
+            <div class="price">
+              <h4>$ <span>100</span></h4>
+            </div>
+            <div class="option">
+              <ul class="list-unstyled">
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 10Gb Space</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 3 Domain Name</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 20 Email Address</li>
+                <li><i class="fa fa-times fa-lg" aria-hidden="true"></i> Live Support</li>
+              </ul>
+            </div>
+            <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+          </div>
+
+          <div class="price-tb premium col-md">
+            <div class="title">
+                <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                <h2 class="text-uppercase">Premium</h2>
+            </div>
+            <div class="price">
+              <h4>$ <span>243</span></h4>
+            </div>
+            <div class="option">
+              <ul class="list-unstyled">
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 10Gb Space</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 3 Domain Name</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> 20 Email Address</li>
+                <li><i class="fa fa-check fa-lg" aria-hidden="true"></i> Live Support</li>
+              </ul>
+            </div>
+            <a class="position-relative d-inline-block text-uppercase" href="#"><span class="position-absolute"></span>Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Prices Section -->
+
+  <!-- Start Team Section -->
+  <section class="position-relative text-center team">
+    <div class="container">
+      <h2 class="h1 text-center text-uppercase"><span>meet our team</span></h2>
+      <p class="text-left">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 col-md-3 wow flipInY" data-wow-offset="200">
+          <div class="person">
+            <img src="images/team/magy.jpg" alt="Magy Bernard"/>
+            <div class="info">
+              <h4>Magy Brde</h4>
+              <h5>Founder</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInX" data-wow-offset="200">
+          <div class="person">
+            <img src="images/team/steve.jpg" alt="Steve Cayo"/>
+            <div class="info">
+              <h4>Steve Cayo</h4>
+              <h5>Assistant</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInY" data-wow-offset="200">
+          <div class="person">
+            <img src="images/team/george.jpg" alt="George Cristof"/>
+            <div class="info">
+              <h4>George Crof</h4>
+              <h5>Secretary</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 wow flipInX" data-wow-offset="200">
+          <div class="person">
+            <img src="images/team/jeny.jpg" alt="Jeny Donald"/>
+            <div class="info">
+              <h4>Jeny Donald</h4>
+              <h5>Assistant</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Team Section -->
+  <!-- Start Footer Section -->
+  <footer id="foot">
+    <div class="container">
+      <div class="row">
+        <div class="content col-md-3">
+          <h3>Creative Ideas!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="text-center icon col-md-3">
+          <h2><i class="fa fa-envelope fa-2x"></i></h2>
+          <h4>MAIL</h4>
+          <p>
+            name@info.com
+          </p>
+        </div>
+        <div class="text-center icon none col-md-3">
+          <h2><i class="fa fa-phone fa-2x"></i></h2>
+          <h4>CALL</h4>
+          <p>
+            +20 0101 9798 532
+          </p>
+        </div>
+        <div class="text-center col-md-3">
+          <h2><i class="fa fa-map-marker fa-2x"></i></h2>
+          <h4>FIND US</h4>
+          <p>
+            Paris, France.
+          </p>
+        </div>
+        <hr />
+        <div class="rights text-center m-auto col-md-8">
+          <h4>All Rights &copy; Reserved For <span class="text-uppercase">doolta</span> &trade;</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/typeit.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

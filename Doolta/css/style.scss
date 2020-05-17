@@ -1,0 +1,802 @@
+@import "main-rulez.scss";
+/* Start Header */
+header{
+	background-image: url(../images/header/bg.png);
+	@extend %cover;
+	height: 600px;
+	color: $color;
+	.overlay-header{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.4);
+	}
+	/* Start Upper Bar */
+	.upper-bar{
+		padding: 10px 5px;
+		background-color: $mainColor;
+		.intro{
+			line-height: 30px;
+		}
+		.scrollTopButton{
+			right: 10px;
+			bottom: 10px;
+			z-index: 7777;
+			@include transition(.5s, ease-in-out);
+			i{
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				cursor: $pointer;
+				background-color: $fontColor;
+				color: $color;
+				@include borderRadius(10px);
+				@include transition(.3s, ease-in-out);
+				&:hover{
+					background-color: $sColor;
+				}
+			}
+		}
+	}
+	/* End Upper Bar*/
+	.social-icons{
+	  right: 0;
+	  margin-top: 10px;
+	  overflow: hidden;
+		z-index: 55555;
+	    li{
+				@include transition(.5s, ease-in-out);
+	      width: 100%;
+	      background-color: $sColor;
+	      padding: 10px;
+	      border-bottom: 2px solid $color;
+	      a{
+	        color: $color;
+	      }
+	      &:last-of-type{
+	        border-bottom: none;
+	      }
+	      &:hover{
+	        cursor: $pointer;
+	        background-color: $color;
+	        a{color: $mainColor;}
+	      }
+	    }
+	}
+
+	/* End Nav-cont */
+	/* Start Header Content */
+	.content{
+		justify-content: center;
+		color: $sColor;
+		.row{
+			justify-content: center;
+			align-items: center;
+		}
+		.speech{
+			h2{
+				color: $color;
+				font-style:italic;
+			}
+			a{
+				background-color: $mainColor;
+				border-color: $mainColor;
+				line-height: 30px;
+				font-size: 17px;
+				font-family: serif;
+				color: $color;
+				@include transition(.5s, ease-in-out);
+				&:hover{
+					background-color: $color;
+					border-color: $mainColor;
+					color: $mainColor;
+				}
+			}
+		}
+		.subscribe{
+			background-color: $color;
+			padding: 0;
+			@include borderRadius(5px);
+			h4{
+				background-color: $mainColor;
+				color: $color;
+				padding: 15px 5px;
+			}
+			form{
+				padding: 30px 15px;
+				input.form-control{
+					@include borderRadius(20px);
+					text-indent: 15px;
+					border: 1px solid $mainColor;
+					&::placeholder{
+						font-family: sans-serif;
+						font-style: italic;
+						color: $sColor
+					}
+				}
+				button{
+					background-color: $mainColor;
+					border-color: $mainColor;
+					@include borderRadius(20px);
+					@include transition(.5s, ease-in-out);
+					&:active{
+						background-color: $mainColor;
+						border-color: $mainColor;
+					}
+					&:hover{
+						background-color: $color;
+						border-color: $mainColor;
+						color: $mainColor;
+					}
+					&:focus{
+						background-color: $mainColor;
+						border-color: $mainColor;
+					}
+					i{
+						@include borderRadius(50%);
+						@extend %icon-dimension;
+						background-color: $fontColor;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	/* End Header Content */
+}
+/* Start Media Query Rulez For Header */
+@media(max-width: 767px){
+	.upper-bar{
+		span{
+			font-size: 14px;
+		}
+		.social-icons > i{
+			display: inline-block;
+		}
+	}
+	.content{
+		text-align: center;
+		h2{
+			font-size: 20px;
+		}
+		h4{
+			font-size: 15px;
+		}
+		a{
+			padding: 3px 10px;
+			font-size: 13px;
+
+		}
+	}
+}
+/* End Media Query Rulez For Header */
+/* End Header */
+/* Strat About Us Section */
+.about-us{
+	@extend %padding-sections;
+	h2{
+		@extend %heading-margin;
+		span{@extend %span-title;}
+	}
+	.intro{
+		font-family: tahoma;
+		font-size: 18px;
+		line-height: 1.3;
+		color: $fontColor;
+		font-style: italic;
+		h2{
+			margin-bottom: 5px;
+			color: $mainColor
+		}
+	}
+	.accordion{
+		.panel-default > .panel-heading {
+			padding: 0;
+			border-radius: 0;
+			background-color: $mainColor;
+		}
+		.panel-title {
+			font-size: 14px;
+			> a {
+				display: block;
+				padding: 15px;
+				text-decoration: none;
+				color: $color;
+				&:hover{color: $fontColor;}
+			}
+		}
+		.panel-body{
+			@include borderRadius(3px);
+			background: rgba(39, 54, 124, .4);
+			border: 2px solid $mainColor;
+			padding: 10px;
+			margin-bottom: 7px;
+		}
+	}
+}
+/* Start Media Query Rulez For About us */
+@media(max-width: 767px){
+	.about-us h2{
+		margin-bottom: 10px;
+		span{
+			padding: 5px 10px;
+			font-size: 23px;}
+		}
+	.intro{
+		h2{text-align: center;}
+	}
+}
+/* End About us Section */
+/* Start Services Section */
+.services{
+	background-image: url(../images/services/04.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	@extend %cover;
+	@extend %padding-sections;
+	padding-bottom: 0 !important;
+	min-height: 100vh;
+	padding: 60px 0;
+	color: $color;
+	h2{
+		@extend %heading-margin;
+		span{
+			@extend %span-title;
+		}
+	}
+	.service-item{
+		padding: 60px;
+		position: relative;
+		overflow: hidden;
+		min-height: 40vh;
+		i{
+			color: $mainColor;}
+		&:hover .front-text{
+			transform: translateY(-200px);}
+		&:hover .back-text{
+			bottom: 0;}
+	}
+	.service-item-dark{
+		background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+	}
+	.service-item-light{
+		background: linear-gradient(rgba(206,208,206,.6),rgba(206,208,206,.6));
+		color: #000;
+	}
+	.front-text,.back-text{
+		@include transition(1.5s, ease-in-out);
+	}
+	.back-text{
+		position: absolute;
+		bottom: -15em;
+		width: 75%;
+		margin: 0 auto;
+		height: 100%;
+		padding: 50px 0;
+		a{
+      padding: 10px 40px;
+      color: $fontColor;
+      margin: 20px 0 10px;
+      border-radius: 40px;
+			span{
+				@include transition(.3s, ease-in-out);
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $mainColor;
+				z-index: -2;
+				transform: scale(0);
+				opacity: 0;
+				border-radius: 8px;
+				box-shadow: 0 10px 15px rgba(38, 54, 125,.5);
+			}
+			&:before,
+			&:after{
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: $mainColor;
+				transition: .5s;
+				z-index: -1;
+				opacity: 0;
+				overflow: hidden;
+			}
+			&:before{
+				left: 0;
+				box-shadow: -100px 0 0 $mainColor;
+			}
+			&:after{
+				right: 0;
+				box-shadow: 100px 0 0 $mainColor;
+			}
+      &:hover{
+				text-decoration: none;
+				color: $fontColor;
+				transition-delay: .3s;
+				&:before{
+					left: calc(50% - 10px);
+					opacity: 1;
+					box-shadow: 30px 0 0 $mainColor;
+				}
+				&:after{
+					left: calc(50% - 10px);
+					opacity: 1;
+					box-shadow: -30px 0 0 $mainColor;
+				}
+				span{
+					opacity: 1;
+					transform: scale(1);
+					transition-delay: .3s;
+				}
+			}
+    }
+	}
+	/* Start Achievments Section */
+	.achievments{
+		padding: 30px 0;
+		margin-top: 20px;
+		background-color: rgba(0,0,0,.7);
+		color: $color;
+		.achieved{
+			@include transition(.7s, ease);
+			@include borderRadius(5px);
+			padding: 40px 0;
+			overflow: hidden;
+			i{
+				@include transition(.7s, ease);}
+			h3{
+				color: $sColor;
+				font-weight: bold;}
+			h4{
+				margin: 15px 0;
+				color: $fontColor;
+				font-family: fantasy}
+				&:hover{
+					@include transform(scale(1.0777));
+					background-color: $color;
+				i{
+					@include transform(rotateY(360deg));
+					color: $sColor;}
+			}
+		}
+	}
+	/* End Achievments Section */
+}
+@media(max-width: 767px){
+	.achieved{
+		margin-bottom: 20px;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media(min-width: 576px){
+	.service-item{
+		&:nth-of-type(1){order: 1}
+		&:nth-of-type(2){order: 2}
+		&:nth-of-type(3){order: 4}
+		&:nth-of-type(4){order: 3}
+	}
+}
+/* End Services Section */
+/* Start Skills Bar */
+.skills{
+
+	@extend %padding-sections;
+		h2.h1{
+			@extend %heading-margin;
+			span{@extend %span-title;}
+		}
+		.what{
+			color: $mainColor;
+			font-family: serif;
+			p:first-of-type{
+				color: $sColor;
+				font-style: italic;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			i{
+				color: $sColor;
+			}
+		}
+	.bar {
+	  width: 80%;
+		margin-bottom: 20px;
+		.skill {
+			color: $fontColor;
+			font-size: .8em;
+		  text-transform: uppercase;
+		  margin-bottom: 0.25em;
+		}
+		.speech-bubble {
+			font-size: 0.75em;
+		  line-height: 2em;
+		  position: absolute;
+		  top: -2.7em;
+		  text-align: center;
+		  min-width: 3em;
+		  display: none;
+			&:after {
+				content: "";
+				border: 0.5em solid transparent;
+				margin-left: -0.5em;
+				position: absolute;
+				top: 100%;
+				left: 50%;
+			}
+		}
+		.bar-outer {
+			height: 1.25em;
+			color: $color;
+			position: relative;
+			.business {
+			  left: calc(93% - 1.5em);
+				background-color: $mainColor;
+				&:after {
+					border-top-color: $mainColor;
+				}
+			}
+			.bs {background-color: $mainColor;}
+
+			.application {
+			  left: calc(97% - 1.5em);
+				background-color: $fontColor;
+				&:after {
+				  border-top-color: $fontColor;
+				}
+			}
+			.ap {background-color: $fontColor;}
+
+			.support {
+			  left: calc(90% - 1.5em);
+				background-color: $sColor;
+				&:after {
+				  border-top-color: $sColor;
+				}
+			}
+			.sp {background-color: $sColor;}
+			.seo {
+				left: calc(88% - 1.5em);
+				background-color: #444;
+				&:after {
+					border-top-color: #444;
+				}
+			}
+			.so {background-color: #444;}
+			.storage {
+			  left: calc(94% - 1.5em);
+				background-color: #37a5fd;
+				&:after {
+				  border-top-color: #37a5fd;
+				}
+			}
+			.sg {background-color: #37a5fd;}
+		}
+
+			.bar-inner {
+				width: 0;
+				height: 1.25em;
+			}
+		}
+		ul{
+			&:first-of-type{
+				float: left;
+				width: 49%;
+				margin-right: 1%;
+			}
+			&:last-of-type{
+				float: right;
+				width: 49%;
+				margin-left: 1%;
+			}
+		}
+	}
+
+/* End Skills Bar */
+/* Start Testimonials */
+.testim{
+  background-image: url(../images/testim/bg.jpg);
+	@extend %cover;
+	@extend %padding-sections;
+	padding-bottom: 0 !important;
+  height: 70vh;
+  .t-overlay{
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+		h2{
+			font-family: cursive;
+	    font-size: 40px;
+		  color: $color;
+			@extend %heading-margin;
+			span{
+				@extend %span-title;
+			}
+		}
+
+    .slider{
+      color: $fontColor;
+      img{
+        @include borderRadius(50%);
+      }
+      q{
+        display: block;
+        font-size: 17px;
+        padding: 15px 30px;
+        line-height: 1.7;
+      }
+      h3{
+        color: $sColor;
+        font-style: italic;
+        font-weight: weight;
+        font-size: 25px;
+        font-family: fantasy;
+      }
+      > div{
+        display: none;
+      }
+      .t-active{
+        display: block;
+      }
+    }
+  }
+}
+@media(max-width: 767px){
+	.testim {
+		h2{
+			margin-top: 15px !important;
+			font-size: 18px !important;
+		}
+	}
+}
+/* End Testimonials */
+/* Start Prices Section */
+.price-tables{
+
+	h2.h1{
+		@extend %heading-margin;
+		span{@extend %span-title;}
+	}
+  margin: 50px auto;
+  .price-tb{
+    transition: all .5s ease-in-out;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 0 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    .title{
+      padding: 20px 0;
+      color: $color;
+      .fa{font-size: 60px;}
+      h2{
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .price{
+      padding: 10px;
+      h4{
+        font-weight: 400;
+        font-size: 30px;
+        span{
+          font-weight: 700;
+          font-size: 60px;}
+      }
+    }
+
+    .option ul li{
+      padding: 15px 10px;
+      border-bottom: 1px solid rgba(0,0,0,.05);
+      font-weight: 300px;
+      &:last-child{border-bottom: none;}
+      .fa-check{color: #4caf50;}
+      .fa-times{color: #f44336;}
+    }
+    a{
+      padding: 10px 40px;
+      color: $fontColor;
+      margin: 20px 0 10px;
+      border-radius: 40px;
+			span{
+				@include transition(.3s, ease-in-out);
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $mainColor;
+				z-index: -2;
+				transform: scale(0);
+				opacity: 0;
+				border-radius: 8px;
+				box-shadow: 0 10px 15px rgba(38, 54, 125,.5);
+			}
+			&:before,
+			&:after{
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: $mainColor;
+				transition: .5s;
+				z-index: -1;
+				opacity: 0;
+				overflow: hidden;
+			}
+			&:before{
+				left: 0;
+				box-shadow: -100px 0 0 $mainColor;
+			}
+			&:after{
+				right: 0;
+				box-shadow: 100px 0 0 $mainColor;
+			}
+      &:hover{
+				text-decoration: none;
+				color: $fontColor;
+				transition-delay: .3s;
+				&:before{
+					left: calc(50% - 10px);
+					opacity: 1;
+					box-shadow: 30px 0 0 $mainColor;
+				}
+				&:after{
+					left: calc(50% - 10px);
+					opacity: 1;
+					box-shadow: -30px 0 0 $mainColor;
+				}
+				span{
+					opacity: 1;
+					transform: scale(1);
+					transition-delay: .3s;
+				}
+			}
+
+    }
+    &:hover{transform: scale(1.05);}
+  }
+
+			.basic{
+				.title{background-color: $sColor;}
+				.price h4{color: $sColor;}
+			}
+
+			.standard{
+				.title{background-color: $mainColor;}
+				.price h4{color: $mainColor;}
+			}
+
+			.premium{
+				.title{background-color: $fontColor;}
+				.price h4{color: $fontColor;}
+			}
+}
+/* End Prices Section */
+/* Start Team Section */
+.team{
+	background-image: url(../images/team/bg.jpg);
+	@extend %cover;
+	@extend %padding-sections;
+		h2{
+			@extend %heading-margin;
+			z-index: 555555;
+			span{
+				@extend %span-title;
+			}
+		}
+	 	p{
+			padding: 0 10px;
+			border-left: 5px solid $mainColor;
+			color: $sColor;
+			margin-bottom: 20px;
+		}
+	 .person{
+		 padding: 0;
+		 color: $color;
+		 position: relative;
+		 overflow: hidden;
+		 img{
+			 width: 100%;
+			 @include transition(.4s, ease-in);
+		 }
+		 .info{
+			 position: absolute;
+			 bottom: -110px;
+			 left: 0;
+			 width: calc(100%);
+			 background-color: rgba(0,0,0,0.6);
+			 @include transition(.4s, ease-in);
+			 h4{
+				 color: $fontColor;
+				 font-family: tahoma;
+				 font-weight: bold;
+				 font-size: 25px;
+			 }
+			 ul{
+				 display: flex;
+				 li{
+					 width: 100%;
+					 a i{
+						 color: $sColor;
+						 @include transition(.4s, ease-in);
+					 	&:hover{
+						 	@include transform(translateY(8px));
+					 }
+				 	}
+				 }
+			 }
+		 }
+		 &:hover{
+			 .info{bottom: 0;}
+			 img{@include transform(scale(1.1));}
+		 }
+	 }
+}
+@media(max-width: 767px){
+	.team .person{
+		margin-bottom: 20px;
+	}
+}
+/* End Team Section */
+@media(max-width: 767px){
+	h2.h1{
+		font-size: 18px
+	}
+}
+/****************************/
+/* Start Footer */
+footer{
+	background-color: $mainColor;
+	padding: 20px 20px 0 20px;
+	color: $color;
+	.content{
+		p{
+			margin-top: 15px;
+			font-size: 15px;
+			font-family: initial;}
+	}
+	i{
+		color: $fontColor;
+	}
+	.icon{
+		border-left: 2px solid $sColor;
+		border-right: 2px solid $sColor;
+	}
+	.none{
+		border-left: 0;
+	}
+	hr{
+		border: 1px solid #288a40;
+    width: 100%;
+	}
+	.rights{
+		padding: 20px;
+		span{
+			color: $sColor;
+		}
+	}
+}
+@media(max-width: 767px){
+	footer{
+		.icon{
+			border: 0;
+		}
+	}
+}
